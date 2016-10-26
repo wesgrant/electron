@@ -116,6 +116,8 @@ class NativeWindowMac : public NativeWindow,
   };
   TitleBarStyle title_bar_style() const { return title_bar_style_; }
 
+  bool zoom_to_content_size() const { return zoom_to_content_size_; }
+
  protected:
   // Return a vector of non-draggable regions that fill a window of size
   // |width| by |height|, but leave gaps where the window should be draggable.
@@ -153,6 +155,8 @@ class NativeWindowMac : public NativeWindow,
   std::vector<DraggableRegion> draggable_regions_;
 
   bool is_kiosk_;
+
+  bool zoom_to_content_size_;
 
   NSInteger attention_request_id_;  // identifier from requestUserAttention
 
