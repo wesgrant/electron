@@ -196,7 +196,7 @@ It creates a new `BrowserWindow` with native properties as set by the `options`.
   * `thickFrame` Boolean - Use `WS_THICKFRAME` style for frameless windows on
     Windows, which adds standard window frame. Setting it to `false` will remove
     window shadow and window animations. Default is `true`.
-  * `zoomToContentSize` Boolean - The zoom behavior on macOS, accessible by
+  * `zoomToPageWidth` Boolean - The zoom behavior on macOS, accessible by
     option-clicking the green stoplight button on the toolbar or running the
     Window > Zoom menu item. If `true`, the window will grow to the width of the
     web page, `false` will cause it to zoom to the width of the screen. This
