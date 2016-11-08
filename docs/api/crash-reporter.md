@@ -38,7 +38,7 @@ The `crash-reporter` module has the following methods:
   * `companyName` String
   * `submitURL` String - URL that crash reports will be sent to as POST.
   * `productName` String (optional) - Defaults to `app.getName()`.
-  * `autoSubmit` Boolean - Send the crash report without user interaction.
+  * `shouldUpload` Boolean _macOS_ - Whether crash reports should be sent to the server
     Default is `true`.
   * `ignoreSystemCrashHandler` Boolean - Default is `false`.
   * `extra` Object - An object you can define that will be sent along with the
@@ -73,6 +73,12 @@ Returns `Object[]`:
 
 Returns all uploaded crash reports. Each report contains the date and uploaded
 ID.
+
+### `crashReporter.setShouldUpload(shouldUpload)`
+
+* `shouldUpload` Boolean _macOS_ - Whether reports should be submitted to the server
+
+This would normally be controlled by user preferences.
 
 ## crash-reporter Payload
 
