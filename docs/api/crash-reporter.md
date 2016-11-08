@@ -74,12 +74,12 @@ Returns `Object[]`:
 Returns all uploaded crash reports. Each report contains the date and uploaded
 ID.
 
-### `crashReporter.getShouldUpload()`
+### `crashReporter.getShouldUpload()` _macOS_
 
 Returns `Boolean` - Whether reports should be submitted to the server.  Set through
 the `start` method or `setShouldUpload`.
 
-### `crashReporter.setShouldUpload(shouldUpload)`
+### `crashReporter.setShouldUpload(shouldUpload)` _macOS_
 
 * `shouldUpload` Boolean _macOS_ - Whether reports should be submitted to the server
 
