@@ -5,7 +5,7 @@ be used in Chrome to debug Electron's main process, however, because
 `node-inspector` relies on some native Node modules they must be rebuilt to
 target the version of Electron you wish to debug. You can either rebuild
 the `node-inspector` dependencies yourself, or let
-[`electron-inspector`][electron-inspector] do it for you, both approaches are
+[`electron-inspector`][electron-inspector] do it for you. Both approaches are
 covered in this document.
 
 **Note**: At the time of writing the latest release of `node-inspector`
